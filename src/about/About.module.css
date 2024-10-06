@@ -1,0 +1,28 @@
+.about {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    color: #6e8efb;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mainTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #666;
+  }
+  

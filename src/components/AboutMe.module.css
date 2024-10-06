@@ -1,0 +1,163 @@
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .imageWrapper {
+    text-align: center;
+  }
+  
+  .imageWrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .contentContainer {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 20px;
+  }
+  
+  .content {
+    max-width: 550px;
+  }
+  
+  .subtitle {
+    color: #10B98B;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .heading {
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .countersSection {
+    margin-bottom: 30px;
+  }
+  
+  .countersContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .counterWrapper {
+    text-align: center;
+  }
+  
+  .counterNumber {
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 1;
+    color: #10B98B;
+  }
+  
+  .counterTitle {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.5;
+  }
+  
+  .spacer {
+    height: 20px;
+  }
+  
+  .ctaSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hireButton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #10B98B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  
+  .socialIconsWrapper {
+    display: flex;
+  }
+  
+  .socialIconWrapper {
+    margin-right: 10px;
+  }
+  
+  .socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #10B98B;
+    text-decoration: none;
+  }
+  
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutMe {
+      flex-direction: column;
+      padding: 50px 0;
+    }
+  
+    .imageContainer,
+    .contentContainer {
+      max-width: 100%;
+    }
+  
+    .content {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  
+    .countersContainer {
+      flex-direction: column;
+    }
+  
+    .counterWrapper {
+      margin-bottom: 20px;
+    }
+  
+    .ctaSection {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .hireButton {
+      margin-bottom: 20px;
+    }
+  }
+  
