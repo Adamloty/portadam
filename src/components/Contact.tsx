@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     <div className={styles.contact}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.subtitle}>Contact</h2>
+          <h2 className={styles.subtitle}>Contact adam</h2>
           <h1 className={styles.title}>Get In Touch</h1>
         </div>
         <section className={styles.contactSection}>
