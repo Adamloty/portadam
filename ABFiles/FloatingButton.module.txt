@@ -1,3 +1,4 @@
+// File: src/components/FloatingButton.module.css
 .floatingButton {
     position: fixed;
     bottom: 20px;

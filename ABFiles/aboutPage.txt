@@ -1,3 +1,4 @@
+// File: src/components/aboutPage.tsx
 'use client'
 
 import Image from 'next/image';

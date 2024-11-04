@@ -1,3 +1,4 @@
+// File: src/components/AboutMe.module.css
 .aboutMe {
     display: flex;
     justify-content: space-between;

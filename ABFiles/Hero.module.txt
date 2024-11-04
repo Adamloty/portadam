@@ -1,3 +1,4 @@
+// File: src/components/Hero.module.css
 .hero {
   position: relative;
   background: linear-gradient(57deg, rgb(16, 185, 139) 0%, rgb(21, 25, 45) 100%);

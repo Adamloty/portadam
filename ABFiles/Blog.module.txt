@@ -1,3 +1,4 @@
+// File: src/components/Blog.module.css
 .blogs {
     padding: 80px 0;
     background-color: #f9f9f9;
