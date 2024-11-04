@@ -1,0 +1,149 @@
+.hero {
+  position: relative;
+  background: linear-gradient(57deg, rgb(16, 185, 139) 0%, rgb(21, 25, 45) 100%);
+  padding: 100px 0;
+  overflow: hidden;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.shape {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: var(--shape-width, 100%);
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: var(--shape-height, auto);
+}
+
+.shape path {
+  fill: #FFFFFF;
+}
+ 
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.textContent {
+  flex: 1;
+  color: #FFFFFF;
+  max-width: 550px;
+}
+
+.title {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #10B98B;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #0E9E7A;
+}
+
+.socialIcons {
+  display: flex;
+  margin-left: 20px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #10B98B;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.socialIcon:hover {
+  background-color: #10B98B;
+  color: #FFFFFF;
+}
+
+.imageContent {
+  flex: 1;
+  text-align: right;
+  max-width: 600px;
+}
+
+.imageContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent, .imageContent {
+    max-width: 100%;
+  }
+
+  .imageContent {
+    margin-top: 40px;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .ctaButton {
+    padding: 12px 24px;
+  }
+}

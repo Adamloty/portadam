@@ -1,0 +1,96 @@
+.servicesWrapper {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .headerSection {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .headerContainer {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .subtitle {
+    color: #10B98B;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 41px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .servicesSection {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .serviceBox {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .serviceBox:hover {
+    transform: translateY(-10px);
+  }
+  
+/* ... (keep the existing styles) ... */
+
+.iconWrapper {
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    width: 80px;  /* Adjust size as needed */
+    height: 80px;  /* Adjust size as needed */
+    fill: #10B98B;  /* Icon color */
+  }
+  
+  /* ... (keep the rest of the existing styles) ... */
+    
+  .serviceTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .serviceDescription {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1024px) {
+    .servicesContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .servicesContainer {
+      grid-template-columns: 1fr;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  }
+  
