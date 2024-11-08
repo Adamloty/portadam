@@ -1,10 +1,21 @@
-import AboutPage from '@/components/aboutPage'
-import React from 'react'
+import React from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import AboutMe from '@/components/About';
 
-function page() {
-  return (
-    <div><AboutPage/></div>
-  )
+export const metadata = {
+  title: 'About - Your Site Name',
+  description: 'Learn more about us and our services',
 }
 
-export default page;
+export default function AboutPage() {
+  return (
+    <>
+      <Header />
+      <main>
+        <AboutMe />
+      </main>
+      <Footer />
+    </>
+  );
+}
