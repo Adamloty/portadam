@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
-import FloatingButton from '@/components/FloatingButton';
-import "./main.css"
+import Footer from '@/components/Footer';
 
 export default function RootLayout({
  children,
@@ -12,8 +11,8 @@ export default function RootLayout({
   <html lang="en">
    <body>
     <Header />
-    {children}
-    <FloatingButton />
+    <main>{children}</main>
+    <Footer />
    </body>
   </html>
  );
