@@ -1,4 +1,3 @@
-// File: src/app/blog/page.tsx
 import React from 'react';
 import Blog from '@/components/Blog';
 
