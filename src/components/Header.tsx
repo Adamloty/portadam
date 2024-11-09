@@ -34,7 +34,7 @@ const Header: React.FC = () => {
        <Link href="/contact" className={styles.navLink}>Contact</Link>
       </li>
       <li className={styles.navItem}>
-       <Link href="/#blog" className={styles.navLink}>Blog</Link>
+       <Link href="/blog" className={styles.navLink}>Blog</Link>
       </li>
      </ul>
     </nav>
