@@ -35,9 +35,9 @@ const Hero: React.FC = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
-          <h1 className={styles.title}>I am Professional Web Designer And Developer.</h1>
+          <h1 className={styles.title}>I am a professional developer and designer.</h1>
           <p className={styles.subtitle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          I am Adam Mahmoud, I have more than 7 years of experience.
           </p>
           <div className={styles.cta}>
             <a href="#" className={styles.ctaButton}>Hire me</a>
