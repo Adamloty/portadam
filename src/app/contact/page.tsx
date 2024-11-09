@@ -1,4 +1,3 @@
-// File: src/app/contact/page.tsx
 import React from 'react';
 import Contact from '@/components/Contact';
 
