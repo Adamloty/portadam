@@ -7,7 +7,6 @@ import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 
 const FloatingButton = dynamic(() => import('../components/FloatingButton'), {
  ssr: false,
@@ -38,7 +37,6 @@ export default function Home() {
     <Contact />
    </section>
   </main>
-  <Footer />
  </>
  )
 }
