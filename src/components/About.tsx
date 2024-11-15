@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import styles from './AboutMe.module.css';
+import Header from './Header';
 
 const AboutMe: React.FC = () => {
  const { ref, inView } = useInView({
@@ -11,7 +12,7 @@ const AboutMe: React.FC = () => {
     triggerOnce: true
  });
 
- return (
+ return (<>  <Header />
   <div className={styles.aboutMe}>
    <div className={styles.imageContainer}>
     <div className={styles.imageWrapper}>
@@ -60,7 +61,8 @@ const AboutMe: React.FC = () => {
      </section>
     </div>
    </div>
-  </div>
+  </div></>
+
  );
 };
 

@@ -6,6 +6,7 @@ import Services from '@/components/Services'
 import Portfolio from '@/components/Portfolio'
 import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
+import Header from '@/components/Header';
 
 const FloatingButton = dynamic(() => import('../components/FloatingButton'), {
  ssr: false,
@@ -14,6 +15,7 @@ const FloatingButton = dynamic(() => import('../components/FloatingButton'), {
 export default function Home() {
  return (
  <>
+  <Header />
   <main>
    <FloatingButton />
    <section id="home">
