@@ -12,29 +12,29 @@ const Header: React.FC = () => {
     animate={{ y: 0 }}
     transition={{ type: 'spring', stiffness: 120, damping: 20 }}
   >
-   <div className={styles.container}>
+ <div className={styles.container}>
     <div className={styles.logoContainer}>
-     <h2 className={styles.logo}>Adam_dev</h2>
+     <h2 className={styles.logo}>Rxcreative</h2>
     </div>
     <nav className={styles.nav}>
-     <ul className={styles.navList}>
+     <ul className={`${styles.navList} ${styles.poppins}`}>
       <li className={styles.navItem}>
-       <Link href="/" className={styles.navLink}>Home</Link>
+       <Link href="/" className={styles.navLink}>HOME</Link>
       </li>
       <li className={styles.navItem}>
-       <Link href="/about" className={styles.navLink}>About</Link>
+       <Link href="/about" className={styles.navLink}>ABOUT</Link>
       </li>
       <li className={styles.navItem}>
-       <Link href="/services" className={styles.navLink}>Services</Link>
+       <Link href="/services" className={styles.navLink}>SERVICES</Link>
       </li>
       <li className={styles.navItem}>
-       <Link href="/portfolio" className={styles.navLink}>Portfolio</Link>
+       <Link href="/portfolio" className={styles.navLink}>PORTFOLIO</Link>
       </li>
       <li className={styles.navItem}>
-       <Link href="/contact" className={styles.navLink}>Contact</Link>
+       <Link href="/contact" className={styles.navLink}>CONTACT</Link>
       </li>
       <li className={styles.navItem}>
-       <Link href="/blog" className={styles.navLink}>Blog</Link>
+       <Link href="/blog" className={styles.navLink}>BLOG</Link>
       </li>
      </ul>
     </nav>

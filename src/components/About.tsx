@@ -30,7 +30,7 @@ const AboutMe: React.FC = () => {
       <h2 className={styles.subtitle}>About Me</h2>
      </div>
      <div className={styles.headingWrapper}>
-      <h1 className={styles.heading}>I'm Creative Web Developer</h1>
+      <h1 className={styles.heading}>I&apos;m Creative Web Developer</h1>
      </div>
      <div className={styles.descriptionWrapper}>
       <p className={styles.description}>
