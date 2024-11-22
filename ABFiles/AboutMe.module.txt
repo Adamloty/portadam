@@ -64,19 +64,23 @@
   }
   
   .counterNumber {
-    font-size: 69px;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 1;
+    margin-top: 10px;
+    line-height: .5;
     color: #10B98B;
+    font-family: sans-serif;
+ 
   }
-  
+ 
   .counterTitle {
-    font-size: 19px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: bold;
     line-height: 2.5;
+    color: #504f4fd3;
+    font-family: sans-serif;
   }
-  
-  .spacer {
+   .spacer {
     height: 20px;
   }
   
