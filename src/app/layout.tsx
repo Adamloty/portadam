@@ -1,7 +1,8 @@
 import React from 'react';
 import { Ropa_Sans, Poppins} from 'next/font/google';
 import Footer from '@/components/Footer';
-
+import "@/app/main.css";
+ 
 const ropaSans = Ropa_Sans({
     weight: '400',
     subsets: ['latin'],

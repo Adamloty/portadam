@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import styles from './Header.module.css';
-
 const Header: React.FC = () => {
  return (
   <motion.header 

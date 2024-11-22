@@ -1,34 +1,39 @@
 .hero {
   position: relative;
-  background: linear-gradient(57deg, rgb(16, 185, 139) 0%, rgb(21, 25, 45) 100%);
-  padding: 100px 0;
+  background: linear-gradient(
+      57deg,
+      rgb(16, 185, 139) 0%,
+      rgb(21, 25, 45) 100%
+  );
+  padding: 100px;
   overflow: hidden;
-  min-height: 800px;
+  min-height: 100%;
   display: flex;
   align-items: center;
 }
 
 .shape {
   position: absolute;
-  bottom: -1px;
-  left: 0;
+  bottom: 0rem;
+  left: 0px;
   width: var(--shape-width, 100%);
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+z-index: 1;
 }
 
 .shape svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: calc(110% + 1.3px);
   height: var(--shape-height, auto);
 }
 
 .shape path {
-  fill: #FFFFFF;
+fill: #fff;
+
 }
- 
 .content {
   display: flex;
   justify-content: space-between;
@@ -40,8 +45,8 @@
 
 .textContent {
   flex: 1;
-  color: #FFFFFF;
-  max-width: 550px;
+  color: #ffffff;
+  max-width: 650px;
 }
 
 .title {
@@ -64,46 +69,50 @@
 
 .ctaButton {
   display: inline-block;
-  padding: 15px 30px;
-  background-color: #10B98B;
-  color: #FFFFFF;
+  padding: 12px 30px;
+  background-color: #10b98b;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
-  transition: background-color 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 
 .ctaButton:hover {
-  background-color: #0E9E7A;
+  background-color: white;
+color: #10b98b;
 }
 
 .socialIcons {
   display: flex;
   margin-left: 20px;
+font-size: 10px;
 }
 
 .socialIcon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  background-color: #FFFFFF;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
   border-radius: 50%;
   margin-right: 10px;
-  color: #10B98B;
+  color: #10b98b;
+padding: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .socialIcon:hover {
-  background-color: #10B98B;
-  color: #FFFFFF;
+  background-color: #10b98b;
+  color: #ffffff;
 }
 
 .imageContent {
   flex: 1;
   text-align: right;
-  max-width: 600px;
+  max-width: 500px;
+z-index: 0;
 }
 
 .imageContent img {
@@ -113,37 +122,38 @@
 
 @media (max-width: 1024px) {
   .content {
-    flex-direction: column;
-    text-align: center;
+      flex-direction: column;
+      text-align: center;
   }
 
-  .textContent, .imageContent {
-    max-width: 100%;
+  .textContent,
+  .imageContent {
+      max-width: 100%;
   }
 
   .imageContent {
-    margin-top: 40px;
+      margin-top: 40px;
   }
 
   .cta {
-    justify-content: center;
+      justify-content: center;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 0;
+      padding: 60px 0;
   }
 
   .title {
-    font-size: 32px;
+      font-size: 32px;
   }
 
   .subtitle {
-    font-size: 14px;
+      font-size: 14px;
   }
 
   .ctaButton {
-    padding: 12px 24px;
+      padding: 12px 24px;
   }
 }

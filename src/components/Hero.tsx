@@ -1,26 +1,26 @@
 'use client';
-
+ 
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
-
+ 
 const Hero: React.FC = () => {
-  const [shapeWidth, setShapeWidth] = useState(100); // Width in percentage
-  const [shapeHeight, setShapeHeight] = useState(100); // Height in pixels
-
+  const [shapeWidth, setShapeWidth] = useState(150); // Width in percentage
+  const [shapeHeight, setShapeHeight] = useState(150); // Height in pixels
+ 
   return (
     <section className={styles.hero}>
-      <div 
+      <div
         className={styles.shape}
         style={{
           '--shape-width': `${shapeWidth}%`,
           '--shape-height': `${shapeHeight}px`
         } as React.CSSProperties}
       >
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 283.5 27.8" 
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 283.5 27.8"
           preserveAspectRatio="none"
           width="100%"
           height="100%"
@@ -29,13 +29,13 @@ const Hero: React.FC = () => {
         </svg>
       </div>
       <div className={styles.content}>
-        <motion.div 
+        <motion.div
           className={styles.textContent}
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
-          <h1 className={styles.title}>I am a professional developer and designer.</h1>
+          <h1 className={styles.title}>I am Professional Developer And Designer.</h1>
           <p className={styles.subtitle}>
             I am Adam Mahmoud, I have more than 7 years of experience.
           </p>
@@ -60,13 +60,13 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </motion.div>
-        <motion.div 
+        <motion.div
           className={styles.imageContent}
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn" }}
         >
-          <Image 
+          <Image
             src="/011.png"
             alt="Description of the image"
             width={500}
@@ -78,5 +78,5 @@ const Hero: React.FC = () => {
     </section>
   );
 };
-
+ 
 export default Hero;
