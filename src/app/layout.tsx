@@ -1,7 +1,9 @@
 import React from 'react';
 import { Ropa_Sans, Poppins} from 'next/font/google';
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import "@/app/main.css";
+
  
 const ropaSans = Ropa_Sans({
     weight: '400',
@@ -23,7 +25,7 @@ export default function RootLayout({
  return (
   <html lang="en">
    <body className={`${ropaSans.className} ${poppins.className}`}>
-    {/* <Header /> */}
+    <Header />
     <main>{children}</main>
     <Footer />
    </body>

@@ -1,12 +1,13 @@
 .footer {
-    background-color: #f9f9f9;
-    padding: 20px 0;
+    background-color: #10B98B;
+    padding: 13px 0;
+    width: 100%;
   }
   
   .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+    width: 100%;
+    /* margin: 0 auto;
+    padding: 0 15px; */
   }
   
   .copyrightSection {
@@ -19,8 +20,8 @@
   
   .copyrightText {
     font-size: 14px;
-    color: #666;
-    margin: 0;
+    color: #fff;
+    /* margin: 0; */
   }
   
   @media (max-width: 768px) {

@@ -1,6 +1,10 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
 body {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: Sans-serif;
+    font-family: sans-serif;
 }

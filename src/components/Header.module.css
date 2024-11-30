@@ -30,6 +30,12 @@
     letter-spacing: -1px;
     transform: scaleY(1.2); /* This stretches the text vertically */
     transform-origin: 0 0; /* This ensures the text doesn't move down when stretched */}
+
+
+/* .ropaSans {
+    font-family: sans-serif;
+} */
+
  
 /* .ropaSans {
     font-family: sans-serif;
@@ -47,6 +53,11 @@
     justify-content: flex-end;
     align-items: center; /* Ensure vertical centering */
 }
+
+/* .poppins {
+    font-family: sans-serif;
+} */
+
  
 /* .poppins {
     font-family: sans-serif;
@@ -63,11 +74,18 @@
     font-weight: 550; /* Changed from 500 to 600 for bolder text */
     transition: color 0.3s ease;
     line-height: 1; /* Ensure vertical centering */
+
+	/* letter-spacing: 0.2px; */
+	font-size: 14px;
+	text-transform: uppercase;
+    font-family: sans-serif;
+    
     /* letter-spacing: 0.2px; */
     font-size: 14px;
     text-transform: uppercase;
     font-family: sans-serif;
    
+
 }
  
 .navLink:hover {

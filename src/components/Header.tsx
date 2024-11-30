@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     className={styles.header}
     initial={{ y: -100 }}
     animate={{ y: 0 }}
-    transition={{ type: 'spring', stiffness: 120, damping: 20 }}
+    transition={{ type: 'spring', stiffness: 120, damping: 20}}
   >
  <div className={styles.container}>
     <div className={styles.logoContainer}>

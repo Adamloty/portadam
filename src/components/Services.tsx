@@ -1,89 +1,44 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faPalette, 
-  faDesktop, 
-  faCode, 
-  faBullhorn, 
-  faMobileAlt, 
-  faGamepad 
-} from '@fortawesome/free-solid-svg-icons';
-import styles from './Services.module.css';
+import { Palette, Globe, Code, Megaphone, Smartphone, Gamepad2 } from 'lucide-react'
 
-const Services: React.FC = () => {
+export default function Component() {
+  const services = [
+    { icon: Palette, title: "GRAPHIC DESIGN", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus," },
+    { icon: Globe, title: "WEB DESIGN", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus," },
+    { icon: Code, title: "WEB DEVELOPMENT", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus," },
+    { icon: Megaphone, title: "DIGITAL MARKETING", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus," },
+    { icon: Smartphone, title: "APP DESIGN", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus," },
+    { icon: Gamepad2, title: "GAME DESIGN", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus," }
+  ]
+
   return (
-    <div className={styles.servicesWrapper}>
-      <section className={styles.headerSection}>
-        <div className={styles.headerContainer}>
-          <div className={styles.headerContent}>
-            <div className={styles.subtitleWrapper}>
-              <h2 className={styles.subtitle}>Services</h2>
-            </div>
-            <div className={styles.titleWrapper}>
-              <h1 className={styles.title}>We Provide The Best Solution</h1>
-            </div>
-          </div>
+    <div className="py-24 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-emerald-500 text-base mb-2.5">Services</h2>
+          <h1 className="text-[41px] font-bold text-gray-800">We Provide The Best Solution</h1>
         </div>
-      </section>
-      
-      <section className={styles.servicesSection}>
-        <div className={styles.servicesContainer}>
-          <ServiceBox
-            icon={faPalette}
-            title="Graphic Design"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,"
-          />
-          <ServiceBox
-            icon={faDesktop}
-            title="Web Design"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,"
-          />
-          <ServiceBox
-            icon={faCode}
-            title="Web Development"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,"
-          />
-          <ServiceBox
-            icon={faBullhorn}
-            title="Digital Marketing"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,"
-          />
-          <ServiceBox
-            icon={faMobileAlt}
-            title="App Design"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,"
-          />
-          <ServiceBox
-            icon={faGamepad}
-            title="Game Design"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,"
-          />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div 
+              key={index}
+              className="p-8 text-center transition-all duration-300"
+            >
+              <div className="mb-4 flex justify-center">
+                <div className="transition-transform duration-300 group hover:scale-110">
+                  <service.icon className="w-9 h-9 text-emerald-500 group-hover:scale-110 transition-transform duration-300 ease-in-out" />
+                </div>
+              </div>
+              <h3 className="text-[15px] font-semibold text-gray-800 mb-2 uppercase">
+                {service.title}
+              </h3>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
     </div>
-  );
-};
-
-interface ServiceBoxProps {
-  icon: any;  // Changed from string to any to accept FontAwesome icon
-  title: string;
-  description: string;
+  )
 }
-
-const ServiceBox: React.FC<ServiceBoxProps> = ({ icon, title, description }) => {
-  return (
-    <div className={styles.serviceBox}>
-      <div className={styles.iconWrapper}>
-        <FontAwesomeIcon icon={icon} className={styles.icon} />
-      </div>
-      <div className={styles.contentWrapper}>
-        <h3 className={styles.serviceTitle}>
-          <span>{title}</span>
-        </h3>
-        <p className={styles.serviceDescription}>{description}</p>
-      </div>
-    </div>
-  );
-};
-
-export default Services;

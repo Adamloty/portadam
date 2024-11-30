@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './Blog.module.css';
+import styles from './Blogme.module.css';
 
 interface BlogPost {
   id: string;
@@ -16,26 +16,26 @@ const blogPosts: BlogPost[] = [
     id: '1',
     title: 'Make Your Website',
     excerpt: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…`,
-    imageUrl: '/images/91.png',
+    imageUrl: 'https://exwpcoder.com/rxcreative/wp-content/uploads/2023/11/91.png',
     slug: 'make-your-website',
   },
   {
     id: '2',
     title: 'Green Cup Filled With Coffee',
     excerpt: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's…`,
-    imageUrl: '/images/werw.png',
+    imageUrl: 'https://exwpcoder.com/rxcreative/wp-content/uploads/2023/11/werw.png',
     slug: 'green-cup-filled-with-coffee',
   },
   {
     id: '3',
     title: 'Opened Book Near Custard',
     excerpt: `It is a long established fact that a reader will be distracted by the readable content of…`,
-    imageUrl: '/images/1.jpg',
+    imageUrl: 'https://exwpcoder.com/rxcreative/wp-content/uploads/2023/11/1.jpg',
     slug: 'opened-book-near-custard',
   },
 ];
 
-const Blog: React.FC = () => {
+const Blogme: React.FC = () => {
   return (
     <div className={styles.blogs}>
       <div className={styles.container}>
@@ -67,4 +67,4 @@ const Blog: React.FC = () => {
   );
 };
 
-export default Blog;
+export default Blogme;

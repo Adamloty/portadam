@@ -1,6 +1,13 @@
-.servicesWrapper {
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* *{
+  font-family: sans-serif;
+} */
+
+/* .servicesWrapper {
     padding: 100px 0;
-    background-color: #f9f9f9;
   }
   
   .headerSection {
@@ -44,26 +51,25 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
   }
   
   .serviceBox:hover {
     transform: translateY(-10px);
   }
   
-/* ... (keep the existing styles) ... */
 
 .iconWrapper {
     margin-bottom: 20px;
   }
   
   .icon {
-    width: 80px;  /* Adjust size as needed */
-    height: 80px;  /* Adjust size as needed */
-    fill: #10B98B;  /* Icon color */
+    width: 40px; 
+    height: 40px; 
+    color: #10B98B; 
+    display: flex;
+    justify-content: center;
   }
   
-  /* ... (keep the rest of the existing styles) ... */
     
   .serviceTitle {
     font-size: 24px;
@@ -93,4 +99,4 @@
       font-size: 32px;
     }
   }
-  
+   */

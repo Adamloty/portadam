@@ -8,7 +8,6 @@ import styles from './Hero.module.css';
 const Hero: React.FC = () => {
   const [shapeWidth, setShapeWidth] = useState(150); // Width in percentage
   const [shapeHeight, setShapeHeight] = useState(150); // Height in pixels
- 
   return (
     <section className={styles.hero}>
       <div
@@ -18,7 +17,10 @@ const Hero: React.FC = () => {
           '--shape-height': `${shapeHeight}px`
         } as React.CSSProperties}
       >
+
+
         <svg
+
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 283.5 27.8"
           preserveAspectRatio="none"
@@ -31,9 +33,9 @@ const Hero: React.FC = () => {
       <div className={styles.content}>
         <motion.div
           className={styles.textContent}
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn" }}
+          transition={{type:"keyframes", duration: 0.5, ease:"easeIn" }}
         >
           <h1 className={styles.title}>I am Professional Developer And Designer.</h1>
           <p className={styles.subtitle}>
@@ -62,9 +64,9 @@ const Hero: React.FC = () => {
         </motion.div>
         <motion.div
           className={styles.imageContent}
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn" }}
+          transition={{type:"keyframes", duration: 0.5, ease:"easeIn" }}
         >
           <Image
             src="/011.png"
